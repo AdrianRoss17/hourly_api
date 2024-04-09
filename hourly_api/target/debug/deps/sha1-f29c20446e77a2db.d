@@ -1,0 +1,11 @@
+C:\Users\adria\Desktop\CODE\hourly_api\hourly_api\target\debug\deps\libsha1-f29c20446e77a2db.rmeta: C:\Users\adria\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sha-1-0.9.8\src\lib.rs C:\Users\adria\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sha-1-0.9.8\src\compress.rs C:\Users\adria\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sha-1-0.9.8\src\consts.rs C:\Users\adria\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sha-1-0.9.8\src\compress\soft.rs C:\Users\adria\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sha-1-0.9.8\src\compress\x86.rs
+
+C:\Users\adria\Desktop\CODE\hourly_api\hourly_api\target\debug\deps\libsha1-f29c20446e77a2db.rlib: C:\Users\adria\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sha-1-0.9.8\src\lib.rs C:\Users\adria\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sha-1-0.9.8\src\compress.rs C:\Users\adria\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sha-1-0.9.8\src\consts.rs C:\Users\adria\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sha-1-0.9.8\src\compress\soft.rs C:\Users\adria\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sha-1-0.9.8\src\compress\x86.rs
+
+C:\Users\adria\Desktop\CODE\hourly_api\hourly_api\target\debug\deps\sha1-f29c20446e77a2db.d: C:\Users\adria\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sha-1-0.9.8\src\lib.rs C:\Users\adria\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sha-1-0.9.8\src\compress.rs C:\Users\adria\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sha-1-0.9.8\src\consts.rs C:\Users\adria\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sha-1-0.9.8\src\compress\soft.rs C:\Users\adria\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sha-1-0.9.8\src\compress\x86.rs
+
+C:\Users\adria\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sha-1-0.9.8\src\lib.rs:
+C:\Users\adria\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sha-1-0.9.8\src\compress.rs:
+C:\Users\adria\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sha-1-0.9.8\src\consts.rs:
+C:\Users\adria\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sha-1-0.9.8\src\compress\soft.rs:
+C:\Users\adria\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sha-1-0.9.8\src\compress\x86.rs:
