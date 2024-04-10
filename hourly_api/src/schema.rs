@@ -14,12 +14,13 @@ diesel::table! {
 
 diesel::table! {
     users (id) {
+        id -> Integer,
         #[max_length = 255]
-        first_name -> Nullable<Varchar>,
+        first_name -> Varchar,
         #[max_length = 255]
-        last_name -> Nullable<Varchar>,
+        last_name -> Varchar,
         #[max_length = 255]
-        id -> Varchar,
+        email -> Varchar,
     }
 }
 
