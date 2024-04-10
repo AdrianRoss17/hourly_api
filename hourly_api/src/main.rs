@@ -1,12 +1,24 @@
-use warp::Filter;
+#[macro_use]
+extern crate rocket;
 
-#[tokio::main]
-async fn main() {
-    // GET /hello/warp => 200 OK with body "Hello, warp!"
-    let hello = warp::path!("hello" / String)
-        .map(|name| format!("Hello, {}!", name));
+use diesel::prelude::*;
+use rocket::{Build, Rocket};
+use rocket::serde::json::Json;
 
-    warp::serve(hello)
-        .run(([127, 0, 0, 1], 3030))
-        .await;
+use self::models::*;
+use self::schema::bird::dsl::*;
+
+mod database;
+mod models;
+mod schema;
+
+#[get("/")]
+fn index() -> Json<Vec<Bird>> {
+    let connection = &mut database::establish_connection();
+    bird.load::<Bird>(connection).map(Json).expect("Error loading birds")
+}
+
+#[launch]
+fn rocket() -> Rocket<Build> {
+    rocket::build().mount("/", routes![index])
 }

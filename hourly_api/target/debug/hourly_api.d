@@ -1,1 +1,1 @@
-C:\Users\adria\Desktop\CODE\hourly_api\hourly_api\target\debug\hourly_api.exe: C:\Users\adria\Desktop\CODE\hourly_api\hourly_api\src\main.rs
+C:\Users\adria\Desktop\CODE\hourly_api\hourly_api\target\debug\hourly_api.exe: C:\Users\adria\Desktop\CODE\hourly_api\hourly_api\src\database.rs C:\Users\adria\Desktop\CODE\hourly_api\hourly_api\src\main.rs C:\Users\adria\Desktop\CODE\hourly_api\hourly_api\src\models.rs C:\Users\adria\Desktop\CODE\hourly_api\hourly_api\src\schema.rs
