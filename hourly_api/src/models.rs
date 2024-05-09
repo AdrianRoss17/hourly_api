@@ -9,3 +9,10 @@ pub struct User {
     pub last_name: String,
     pub email: String,
 }
+
+#[derive(Serialize, Queryable)]
+#[serde(crate = "rocket::serde")]
+pub struct Password {
+    pub id: i32,
+    pub passwords: String,
+}
