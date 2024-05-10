@@ -3,7 +3,7 @@ extern crate rocket;
 use diesel::prelude::*;
 use rocket::serde::json::Json;
 
-use self::models::*;
+use self::models::Password;
 use self::schema::password::dsl::*;
 
 use rocket::http::Method;
@@ -19,13 +19,13 @@ mod database;
 mod models;
 mod schema;
 
-#[get("/password/<id>")]
-fn is_authenticated(id: i16) -> Json<Vec<Password>> {
+#[get("/auth")]
+fn is_authenticated() -> Json<Vec<Password>> {
     let connection = &mut database::establish_connection();
-    let pass = connection.(&id);
-    match pass {
-        Ok(Password) => Ok(Json(Password)),
-    }
+    let result = password.load::<Password>(connection).map(Json).expect("Error loading posts");
+
+    return result
+
 }
 
 #[rocket::main]
@@ -41,7 +41,7 @@ async fn main() -> Result<(), Box<dyn Error>> {
     .allow_credentials(true).to_cors()?;
 
     rocket::build()
-        .mount("/password", routes![is_authenticated])
+        .mount("/auth", routes![is_authenticated])
         .attach(cors2)
         .launch()
         .await?;

@@ -1,6 +1,14 @@
 
 
 diesel::table! {
+    password (user_id) {
+        user_id -> Integer,
+        #[max_length = 255]
+        passwords -> Varchar,
+    }
+}
+
+diesel::table! {
     users (id) {
         id -> Integer,
         #[max_length = 255]
@@ -12,15 +20,7 @@ diesel::table! {
     }
 }
 
-diesel::table! {
-    password (user_id) {
-        user_id -> Integer,
-        #[max_length = 255]
-        passwords -> Nullable<Varchar>,
-    }
-}
-
 diesel::allow_tables_to_appear_in_same_query!(
-    users,
-    password
+    password,
+    users
 );
